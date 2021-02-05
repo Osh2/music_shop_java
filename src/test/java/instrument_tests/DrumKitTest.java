@@ -1,7 +1,6 @@
 package instrument_tests;
 
 import instruments.DrumKit;
-import instruments.Guitar;
 import org.junit.Before;
 import org.junit.Test;
 
