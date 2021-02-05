@@ -33,6 +33,11 @@ public class AccessoryTest {
         assertEquals("5b Drum Sticks", accessory.getItem());
     }
 
+    @Test
+    public void canGetMake() {
+        assertEquals("Vic Firth", accessory.getMake());
+    }
+
 
 }
 
