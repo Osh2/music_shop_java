@@ -28,6 +28,11 @@ public class AccessoryTest {
         assertEquals(6.50, accessory.getSalePrice(),0);
     }
 
+    @Test
+    public void canGetItemName() {
+        assertEquals("5b Drum Sticks", accessory.getItem());
+    }
+
 
 }
 
