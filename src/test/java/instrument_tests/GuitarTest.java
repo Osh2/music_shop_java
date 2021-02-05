@@ -50,4 +50,9 @@ public class GuitarTest {
     public void canGetColour() {
         assertEquals("Wood Stain", guitar.getColour());
     }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(33, guitar.calculateMarkup(),0);
+    }
 }
