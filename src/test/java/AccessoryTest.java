@@ -20,7 +20,7 @@ public class AccessoryTest {
 
     @Test
     public void canGetWholeSalePrice() {
-        assertEquals(3.40, accessory.getSalePrice(), 0);
+        assertEquals(3.40, accessory.getWholesalePrice(), 0);
     }
 
     @Test
