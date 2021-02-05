@@ -38,6 +38,10 @@ public class AccessoryTest {
         assertEquals("Vic Firth", accessory.getMake());
     }
 
+    @Test
+    public void canGetAssociatedInstrument() {
+        assertEquals("Percussion", accessory.getAssociatedInstrument());
+    }
 
 }
 
