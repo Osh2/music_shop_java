@@ -45,4 +45,9 @@ public class FluteTest {
     public void canGetSize() {
         assertEquals("Medium", flute.getSize());
     }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(24, flute.calculateMarkup(),0);
+    }
 }
