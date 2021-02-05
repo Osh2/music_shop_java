@@ -45,4 +45,9 @@ public class GuitarTest {
     public void canGetNumStrings() {
         assertEquals(6, guitar.getNumStrings());
     }
+
+    @Test
+    public void canGetColour() {
+        assertEquals("Wood Stain", guitar.getColour());
+    }
 }
