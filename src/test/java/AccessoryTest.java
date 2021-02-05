@@ -23,5 +23,11 @@ public class AccessoryTest {
         assertEquals(3.40, accessory.getSalePrice(), 0);
     }
 
+    @Test
+    public void canGetSalePrice() {
+        assertEquals(6.50, accessory.getSalePrice(),0);
+    }
+
+
 }
 
