@@ -1,6 +1,8 @@
 package instruments;
 
-public abstract class Instrument {
+import behaviours.ForSale;
+
+public abstract class Instrument implements ForSale {
 
     private double wholesalePrice;
     private double salePrice;
@@ -28,5 +30,10 @@ public abstract class Instrument {
 
     public String getType() {
         return type;
+    }
+
+    public double calculateMarkup(){
+        double profit = salePrice - wholesalePrice;
+        return profit/wholesalePrice;
     }
 }

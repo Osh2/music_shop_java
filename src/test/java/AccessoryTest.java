@@ -10,7 +10,7 @@ public class AccessoryTest {
 
     @Before
     public void before(){
-        accessory = new Accessory(3.40, 6.50, "5b Drum Sticks", "Vic Firth", "Percussion");
+        accessory = new Accessory(3.40, 5.50, "5b Drum Sticks", "Vic Firth", "Percussion");
     }
 
     @Test
@@ -25,7 +25,7 @@ public class AccessoryTest {
 
     @Test
     public void canGetSalePrice() {
-        assertEquals(6.50, accessory.getSalePrice(),0);
+        assertEquals(5.50, accessory.getSalePrice(),0);
     }
 
     @Test
@@ -43,5 +43,9 @@ public class AccessoryTest {
         assertEquals("Percussion", accessory.getAssociatedInstrument());
     }
 
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(62, accessory.calculateMarkup(),0);
+    }
 }
 

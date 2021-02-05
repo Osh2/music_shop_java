@@ -1,4 +1,6 @@
-public class Accessory {
+import behaviours.ForSale;
+
+public class Accessory implements ForSale {
 
     private double wholesalePrice;
     private double salePrice;
@@ -32,5 +34,10 @@ public class Accessory {
 
     public String getAssociatedInstrument() {
         return associatedInstrument;
+    }
+
+    public double calculateMarkup(){
+        double profit = salePrice - wholesalePrice;
+        return Math.round(profit/wholesalePrice*100);
     }
 }
