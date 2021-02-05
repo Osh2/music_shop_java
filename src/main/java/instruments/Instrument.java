@@ -34,6 +34,6 @@ public abstract class Instrument implements ForSale {
 
     public double calculateMarkup(){
         double profit = salePrice - wholesalePrice;
-        return profit/wholesalePrice;
+        return Math.round(profit/wholesalePrice*100);
     }
 }

@@ -56,4 +56,8 @@ public class DrumKitTest {
         assertEquals("Double bass pedal", kit.getFeatures());
     }
 
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(51, kit.calculateMarkup(),0.0);
+    }
 }
