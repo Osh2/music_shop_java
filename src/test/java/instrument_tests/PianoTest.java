@@ -40,4 +40,9 @@ public class PianoTest {
     public void canGetType() {
         assertEquals("Grand", piano.getType());
     }
+
+    @Test
+    public void canGetAge() {
+        assertEquals(0, piano.getAge());
+    }
 }
