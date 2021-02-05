@@ -45,4 +45,9 @@ public class PianoTest {
     public void canGetAge() {
         assertEquals(0, piano.getAge());
     }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(33, piano.calculateMarkup(), 0);
+    }
 }
