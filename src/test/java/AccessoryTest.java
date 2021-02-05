@@ -18,6 +18,10 @@ public class AccessoryTest {
         assertNotNull(accessory);
     }
 
+    @Test
+    public void canGetWholeSalePrice() {
+        assertEquals(3.40, accessory.getSalePrice(), 0);
+    }
 
 }
 
