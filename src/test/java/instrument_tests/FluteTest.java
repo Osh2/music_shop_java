@@ -56,4 +56,9 @@ public class FluteTest {
     public void canGetInstumentType() {
         assertEquals(InstrumentType.BRASS, brass.getInstrument());
     }
+
+    @Test
+    public void canPlay() {
+        assertEquals("https://www.youtube.com/watch?v=092VyThpHUM", brass.play());
+    }
 }
