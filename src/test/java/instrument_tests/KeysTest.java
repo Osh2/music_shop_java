@@ -56,4 +56,9 @@ public class KeysTest {
     public void canGetInstrumentType() {
         assertEquals(InstrumentType.KEYS, keys.getInstrument());
     }
+
+    @Test
+    public void canPlay() {
+        assertEquals("https://www.youtube.com/watch?v=n4JD-3-UAzM", keys.play());
+    }
 }
