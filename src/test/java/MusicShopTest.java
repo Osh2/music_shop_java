@@ -58,6 +58,12 @@ public class MusicShopTest {
 
     @Test
     public void canGetTotalPotentialProfits() {
-        assertEquals(95, ricks.getPotentialProfits());
+        assertEquals(95, ricks.getPotentialProfits(),0);
+    }
+
+    @Test
+    public void canFindInstrumentInStock() {
+        assertEquals("Instrument in stock!", ricks.findItem(InstrumentType.GUITAR));
+        assertEquals("Out of stock", ricks.findItem(InstrumentType.KEYS));
     }
 }
