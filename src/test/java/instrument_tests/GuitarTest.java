@@ -24,17 +24,17 @@ public class GuitarTest {
 
     @Test
     public void canGetWholesalePrice() {
-        assertEquals(75.73, guitar.getWholesalePrice(),0);
+        assertEquals(75, guitar.getWholesalePrice(),0);
     }
 
     @Test
     public void canGetSalePrice() {
-        assertEquals(100.50, guitar.getSalePrice(),0);
+        assertEquals(100, guitar.getSalePrice(),0);
     }
 
     @Test
     public void canGetMaterial() {
-        assertEquals("Ash", guitar.getMaterial());
+        assertEquals("Mahogany", guitar.getMaterial());
     }
 
     @Test
@@ -49,7 +49,7 @@ public class GuitarTest {
 
     @Test
     public void canGetColour() {
-        assertEquals("Wood Stain", guitar.getColour());
+        assertEquals("Natural", guitar.getColour());
     }
 
     @Test
