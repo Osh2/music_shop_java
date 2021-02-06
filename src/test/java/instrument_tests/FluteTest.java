@@ -52,4 +52,8 @@ public class FluteTest {
         assertEquals(33, brass.calculateMarkup(),0);
     }
 
+    @Test
+    public void canGetInstumentType() {
+        assertEquals(InstrumentType.BRASS, brass.getInstrument());
+    }
 }
