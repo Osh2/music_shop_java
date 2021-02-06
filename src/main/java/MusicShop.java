@@ -26,5 +26,8 @@ public class MusicShop {
         return till;
     }
 
-//    NEED TO TEST MUSIC SHOP
+    public void addToStock(ForSale item){
+        stock.add(item);
+    }
+
 }

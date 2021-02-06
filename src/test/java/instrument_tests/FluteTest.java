@@ -1,6 +1,7 @@
 package instrument_tests;
 
-import instruments.Flute;
+import instruments.Brass;
+import instruments.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,45 +10,45 @@ import static org.junit.Assert.assertNotNull;
 
 public class FluteTest {
 
-    Flute flute;
+    Brass brass;
 
     @Before
     public void before(){
-        flute = new Flute( 80.50, 99.99, "Brass", "Standard", "Medium");
+        brass = new Brass( InstrumentType.BRASS, "Flute", 60, 80, "Brass", "medium");
     }
 
     @Test
     public void exists() {
-        assertNotNull(flute);
+        assertNotNull(brass);
     }
 
     @Test
     public void canGetWholesalePrice() {
-        assertEquals(80.50, flute.getWholesalePrice(),0);
+        assertEquals(80.50, brass.getWholesalePrice(),0);
     }
 
     @Test
     public void canGetSalePrice() {
-        assertEquals(99.99, flute.getSalePrice(),0);
+        assertEquals(99.99, brass.getSalePrice(),0);
     }
 
     @Test
     public void canGetMaterial() {
-        assertEquals("Brass", flute.getMaterial());
+        assertEquals("Brass", brass.getMaterial());
     }
 
     @Test
     public void canGetType() {
-        assertEquals("Standard", flute.getType());
+        assertEquals("Standard", brass.getType());
     }
 
     @Test
     public void canGetSize() {
-        assertEquals("Medium", flute.getSize());
+        assertEquals("Medium", brass.getSize());
     }
 
     @Test
     public void canCalculateMarkup() {
-        assertEquals(24, flute.calculateMarkup(),0);
+        assertEquals(24, brass.calculateMarkup(),0);
     }
 }

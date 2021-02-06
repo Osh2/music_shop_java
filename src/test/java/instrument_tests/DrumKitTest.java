@@ -1,6 +1,7 @@
 package instrument_tests;
 
 import instruments.DrumKit;
+import instruments.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,7 +14,7 @@ public class DrumKitTest {
 
     @Before
     public void before(){
-        kit = new DrumKit(150, 225.99, "Woods, Mylar", "Basic Trad Rock", 3, 2, "Double bass pedal");
+        kit = new DrumKit(InstrumentType.DRUMS, "Basic Traditional", 200, 250, "Woods, Metals", 3, 2 ,"Double bass pedal");
     }
 
     @Test
@@ -54,6 +55,11 @@ public class DrumKitTest {
     @Test
     public void canGetFeatures() {
         assertEquals("Double bass pedal", kit.getFeatures());
+    }
+
+    @Test
+    public void canGetInstrumentType() {
+        assertEquals(InstrumentType.DRUMS, kit.getInstrument());
     }
 
     @Test
