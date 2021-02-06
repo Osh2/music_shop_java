@@ -36,8 +36,12 @@ public class Accessory implements ForSale {
         return associatedInstrument;
     }
 
-    public double calculateMarkup(){
+    public double calculateMarkupAsPercent(){
         double profit = salePrice - wholesalePrice;
         return Math.round(profit/wholesalePrice*100);
+    }
+
+    public double calculateMarkup(){
+        return salePrice-wholesalePrice;
     }
 }

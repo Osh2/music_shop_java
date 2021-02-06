@@ -49,7 +49,7 @@ public class KeysTest {
 
     @Test
     public void canCalculateMarkup() {
-        assertEquals(20, keys.calculateMarkup(), 0);
+        assertEquals(20, keys.calculateMarkupAsPercent(), 0);
     }
 
     @Test

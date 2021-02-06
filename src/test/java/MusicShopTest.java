@@ -10,10 +10,25 @@ import static org.junit.Assert.assertNotNull;
 public class MusicShopTest {
 
     MusicShop ricks;
+    ForSale guitar;
+    ForSale guitar2;
+    ForSale guitar3;
+    ForSale accessory;
+    ForSale sticks;
 
     @Before
-    public void before(){
+    public void before() {
         ricks = new MusicShop("Ricks", 500);
+        guitar = new Guitar(InstrumentType.GUITAR, "Acoustic", 75, 100, "Mahogany", 6, "Natural");
+        guitar2 = new Guitar(InstrumentType.GUITAR, "Electric", 150, 200, "Birch", 8, "Red");
+        guitar3 = new Guitar(InstrumentType.GUITAR, "Electric Bass", 125, 140, "Mahogany", 4, "SunBurst");
+        accessory = new Accessory(6, 8.50, "Guitar Strap", "Fender", "Guitar");
+        sticks = new Accessory(10, 12.50, "Drum Sticks", "Vic Firth", "Drums");
+        ricks.addToStock(guitar);
+        ricks.addToStock(guitar2);
+        ricks.addToStock(guitar3);
+        ricks.addToStock(accessory);
+        ricks.addToStock(sticks);
     }
 
     @Test
@@ -38,8 +53,11 @@ public class MusicShopTest {
 
     @Test
     public void hasStock() {
-        ForSale guitar = new Guitar(InstrumentType.GUITAR, "Acoustic", 75, 100, "Mahogany", 6, "Natural");
-        ricks.addToStock(guitar);
-        assertEquals(1, ricks.getStock().size());
+        assertEquals(5, ricks.getStock().size());
+    }
+
+    @Test
+    public void canGetTotalPotentialProfits() {
+        assertEquals(95, ricks.getPotentialProfits());
     }
 }

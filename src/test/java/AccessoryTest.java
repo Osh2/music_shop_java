@@ -45,7 +45,7 @@ public class AccessoryTest {
 
     @Test
     public void canCalculateMarkup() {
-        assertEquals(62, accessory.calculateMarkup(),0);
+        assertEquals(62, accessory.calculateMarkupAsPercent(),0);
     }
 }
 

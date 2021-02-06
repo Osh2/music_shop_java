@@ -64,7 +64,7 @@ public class DrumKitTest {
 
     @Test
     public void canCalculateMarkup() {
-        assertEquals(25, kit.calculateMarkup(),0.0);
+        assertEquals(25, kit.calculateMarkupAsPercent(),0.0);
     }
 
     @Test

@@ -30,4 +30,5 @@ public class MusicShop {
         stock.add(item);
     }
 
+//    public void calculatePotentialProfits
 }

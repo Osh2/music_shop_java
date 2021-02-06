@@ -49,7 +49,7 @@ public class BrassTest {
 
     @Test
     public void canCalculateMarkup() {
-        assertEquals(33, brass.calculateMarkup(),0);
+        assertEquals(33, brass.calculateMarkupAsPercent(),0);
     }
 
     @Test

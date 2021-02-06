@@ -39,9 +39,13 @@ public abstract class Instrument implements ForSale, Play {
         return instrument;
     }
 
-    public double calculateMarkup(){
+    public double calculateMarkupAsPercent(){
         double profit = salePrice - wholesalePrice;
         return Math.round(profit/wholesalePrice*100);
+    }
+
+    public double calculateMarkup(){
+        return salePrice - wholesalePrice;
     }
 
     public String play(){

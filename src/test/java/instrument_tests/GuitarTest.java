@@ -54,7 +54,7 @@ public class GuitarTest {
 
     @Test
     public void canCalculateMarkup() {
-        assertEquals(33, guitar.calculateMarkup(),0);
+        assertEquals(33, guitar.calculateMarkupAsPercent(),0);
     }
 
     @Test
