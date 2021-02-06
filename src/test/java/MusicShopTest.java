@@ -22,4 +22,9 @@ public class MusicShopTest {
     public void canGetName() {
         assertEquals("Ricks", ricks.getName());
     }
+
+    @Test
+    public void canGetTill() {
+        assertEquals(500, ricks.getTill(),0);
+    }
 }
