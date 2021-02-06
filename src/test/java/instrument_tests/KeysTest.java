@@ -52,5 +52,8 @@ public class KeysTest {
         assertEquals(20, keys.calculateMarkup(), 0);
     }
 
-
+    @Test
+    public void canGetInstrumentType() {
+        assertEquals(InstrumentType.KEYS, keys.getInstrument());
+    }
 }
