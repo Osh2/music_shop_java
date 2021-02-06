@@ -61,4 +61,9 @@ public class GuitarTest {
     public void canGetInstrumentType() {
         assertEquals(InstrumentType.GUITAR, guitar.getInstrument());
     }
+
+    @Test
+    public void canPlay() {
+        assertEquals("https://www.youtube.com/watch?v=265UrX_0glY", guitar.play());
+    }
 }
