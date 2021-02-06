@@ -14,7 +14,7 @@ public class KeysTest {
 
     @Before
     public void before(){
-        keys = new Keys(InstrumentType.KEYS, "Grand Piano", 10000, 12000, "Premium materials", 0);
+        keys = new Keys(InstrumentType.KEYS, "Grand Piano", 10000, 12000, "Premium Materials", 0);
     }
 
     @Test
@@ -24,12 +24,12 @@ public class KeysTest {
 
     @Test
     public void canGetWholesalePrice() {
-        assertEquals(600, keys.getWholesalePrice(),0);
+        assertEquals(10000, keys.getWholesalePrice(),0);
     }
 
     @Test
     public void canGetSalePrice() {
-        assertEquals(800, keys.getSalePrice(),0);
+        assertEquals(12000, keys.getSalePrice(),0);
     }
 
     @Test
@@ -39,7 +39,7 @@ public class KeysTest {
 
     @Test
     public void canGetType() {
-        assertEquals("Grand", keys.getType());
+        assertEquals("Grand Piano", keys.getType());
     }
 
     @Test
@@ -49,6 +49,8 @@ public class KeysTest {
 
     @Test
     public void canCalculateMarkup() {
-        assertEquals(33, keys.calculateMarkup(), 0);
+        assertEquals(20, keys.calculateMarkup(), 0);
     }
+
+
 }
