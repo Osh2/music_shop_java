@@ -14,7 +14,7 @@ public class FluteTest {
 
     @Before
     public void before(){
-        brass = new Brass( InstrumentType.BRASS, "Flute", 60, 80, "Brass", "medium");
+        brass = new Brass( InstrumentType.BRASS, "Flute", 60, 80, "Brass", "Medium");
     }
 
     @Test
@@ -24,12 +24,12 @@ public class FluteTest {
 
     @Test
     public void canGetWholesalePrice() {
-        assertEquals(80.50, brass.getWholesalePrice(),0);
+        assertEquals(60, brass.getWholesalePrice(),0);
     }
 
     @Test
     public void canGetSalePrice() {
-        assertEquals(99.99, brass.getSalePrice(),0);
+        assertEquals(80, brass.getSalePrice(),0);
     }
 
     @Test
@@ -39,7 +39,7 @@ public class FluteTest {
 
     @Test
     public void canGetType() {
-        assertEquals("Standard", brass.getType());
+        assertEquals("Flute", brass.getType());
     }
 
     @Test
@@ -49,6 +49,7 @@ public class FluteTest {
 
     @Test
     public void canCalculateMarkup() {
-        assertEquals(24, brass.calculateMarkup(),0);
+        assertEquals(33, brass.calculateMarkup(),0);
     }
+
 }
