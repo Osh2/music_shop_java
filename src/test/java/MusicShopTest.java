@@ -27,4 +27,9 @@ public class MusicShopTest {
     public void canGetTill() {
         assertEquals(500, ricks.getTill(),0);
     }
+
+    @Test
+    public void hasEmptyStock() {
+        assertEquals(0, ricks.getStock().size());
+    }
 }
