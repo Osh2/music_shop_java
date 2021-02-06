@@ -14,7 +14,7 @@ public class DrumKitTest {
 
     @Before
     public void before(){
-        kit = new DrumKit(InstrumentType.DRUMS, "Basic Traditional", 200, 250, "Woods, Metals", 3, 2 ,"Double bass pedal");
+        kit = new DrumKit(InstrumentType.DRUMS, "Basic Traditional", 200, 250, "Woods, Metals, Mylar", 3, 2 ,"Double bass pedal");
     }
 
     @Test
@@ -24,22 +24,22 @@ public class DrumKitTest {
 
     @Test
     public void canGetWholesalePrice() {
-        assertEquals(150, kit.getWholesalePrice(),0);
+        assertEquals(200, kit.getWholesalePrice(),0);
     }
 
     @Test
     public void canGetSalePrice() {
-        assertEquals(225.99, kit.getSalePrice(),0);
+        assertEquals(250, kit.getSalePrice(),0);
     }
 
     @Test
     public void canGetMaterial() {
-        assertEquals("Woods, Mylar", kit.getMaterial());
+        assertEquals("Woods, Metals, Mylar", kit.getMaterial());
     }
 
     @Test
     public void canGetType() {
-        assertEquals("Basic Trad Rock", kit.getType());
+        assertEquals("Basic Traditional", kit.getType());
     }
 
     @Test
@@ -64,6 +64,11 @@ public class DrumKitTest {
 
     @Test
     public void canCalculateMarkup() {
-        assertEquals(51, kit.calculateMarkup(),0.0);
+        assertEquals(25, kit.calculateMarkup(),0.0);
+    }
+
+    @Test
+    public void canPlay() {
+        assertEquals("https://www.youtube.com/watch?v=9esWG6A6g-k", kit.play());
     }
 }
