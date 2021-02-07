@@ -47,11 +47,6 @@ public class MusicShopTest {
     }
 
     @Test
-    public void hasEmptyStock() {
-        assertEquals(0, ricks.getStock().size());
-    }
-
-    @Test
     public void hasStock() {
         assertEquals(5, ricks.getStock().size());
     }
